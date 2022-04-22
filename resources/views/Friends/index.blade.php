@@ -12,7 +12,7 @@
     <p class="card-text">{{ $friend['alamat'] }}</p>
     <a href="/friends/{{ $friend['id'] }}/edit" class="card-link btn-warning">Edit Teman</a>
 
-    <form action="/friends/{{ $friends['id'] }}" method="POST">
+    <form action="/friends/{{ $friend['id'] }}" method="POST">
     @csrf
    @method('DELETE')
     <button class="card-link btn-danger">Delete Teman</button>
